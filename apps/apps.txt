@@ -1,0 +1,6 @@
+1Password:
+https://1password.com/downloads/mac/
+
+Hammerspoon:
+https://github.com/Hammerspoon/hammerspoon/releases/latest
+
