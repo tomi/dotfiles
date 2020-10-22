@@ -98,3 +98,12 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+echo ""
+echo ""
+echo "           MANUALLY APPLY THESE CHANGES:           "
+echo ""
+echo " - Change 'Move focus to the next window' shortcut"
+echo " - Disable the 'Select previous input source' shortcut"
+
+open /System/Library/PreferencePanes/Keyboard.prefPane
