@@ -82,6 +82,7 @@ alias gpl='git pull'
 alias gps='git push'
 alias gpsf='git push --force-with-lease'
 alias gr="git for-each-ref --sort=-committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:blue)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))' --count=10"
+alias gcan="git commit --amend --no-edit"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
