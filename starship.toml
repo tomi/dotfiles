@@ -1,0 +1,153 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[aws]
+symbol = "  "
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+
+[conda]
+symbol = " "
+format = '\[[$symbol$environment]($style)\]'
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+format = '\[[$symbol$context]($style)\]'
+
+[elixir]
+symbol = " "
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
+
+[elm]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[git_branch]
+symbol = " "
+format = '\[[$symbol$branch]($style)\]'
+
+[golang]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[hg_branch]
+symbol = " "
+format = '\[[$symbol$branch]($style)\]'
+
+[java]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[memory_usage]
+symbol = " "
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[nim]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[nix_shell]
+symbol = " "
+format = '\[[$symbol$state( \($name\))]($style)\]'
+
+[php]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[python]
+symbol = " "
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[ruby]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[rust]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[scala]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
+format = '\[[$symbol($version)]($style)\]'
+
+[cmd_duration]
+format = '\[[⏱ $duration ]($style)\]'
+
+[deno]
+format = '\[[$symbol($version)]($style)\]'
+
+[dotnet]
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+
+[erlang]
+format = '\[[$symbol($version)]($style)\]'
+
+[gcloud]
+format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[helm]
+format = '\[[$symbol($version)]($style)\]'
+
+[kotlin]
+format = '\[[$symbol($version)]($style)\]'
+
+[kubernetes]
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
+
+[lua]
+format = '\[[$symbol($version)]($style)\]'
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+
+[openstack]
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+symbol = " "
+format = '\[[$symbol$version]($style)\]'
+
+[purescript]
+format = '\[[$symbol($version)]($style)\]'
+
+[red]
+format = '\[[$symbol($version)]($style)\]'
+
+[terraform]
+format = '\[[$symbol$workspace]($style)\]'
+
+[time]
+format = '\[[$time]($style)\]'
+
+[username]
+format = '\[[$user]($style)\]'
+
+[vagrant]
+format = '\[[$symbol($version)]($style)\]'
+
+[vlang]
+format = '\[[$symbol($version)]($style)\]'
+
+[zig]
+format = '\[[$symbol($version)]($style)\]'
