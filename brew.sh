@@ -17,10 +17,18 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install azure-cli
 brew install csvkit
 brew install jq
+brew install fnm
+brew install fx
 brew install scmpuff
+brew install sqlite
+brew install starship
 brew install tfenv
 brew install tldr
 brew install zsh
+
+# Kubetools
+brew install kubecolor
+brew install stern
 
 # Remove outdated versions from the cellar.
 brew cleanup

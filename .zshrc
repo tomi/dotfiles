@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,32 +48,16 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history-substring-search zsh-autosuggestions)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export KUBE_EDITOR='vim'
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+eval "$(starship init zsh)"
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
 alias gpsup='git push --set-upstream origin $(git_current_branch)'
 
 function gcb() { git branch "$1"; git checkout "$1" }
@@ -83,6 +67,22 @@ alias gps='git push'
 alias gpsf='git push --force-with-lease'
 alias gr="git for-each-ref --sort=-committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:blue)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))' --count=10"
 alias gcan="git commit --amend --no-edit"
+alias lg="lazygit"
+
+# kube aliases
+alias k="kubecolor"
+alias kga="kubecolor get all"
+alias kgp="kubecolor get pods"
+alias kgs="kubecolor get svc"
+alias kgn="kubecolor get ns"
+alias kgd="kubecolor get deploy"
+
+# pnpm aliases
+alias pn="pnpm"
+alias pib="pnpm install && pnpm build"
+
+# other aliases
+alias pjs="cat package.json | jq '.scripts'"
 
 eval "$(fnm env)"
 eval "$(scmpuff init -s)"

@@ -4,3 +4,14 @@ https://1password.com/downloads/mac/
 Hammerspoon:
 https://github.com/Hammerspoon/hammerspoon/releases/latest
 
+Alfred:
+https://www.alfredapp.com/
+
+VSCode:
+https://code.visualstudio.com/
+
+Docker for Mac
+https://docs.docker.com/desktop/install/mac-install/
+
+BetterSnapTool
+https://apps.apple.com/us/app/bettersnaptool/id417375580?mt=12
