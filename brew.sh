@@ -22,11 +22,13 @@ brew install fx
 brew install scmpuff
 brew install sqlite
 brew install starship
+brew install stats
 brew install tfenv
 brew install tldr
 brew install zsh
 
 # Kubetools
+brew install kubectl
 brew install kubecolor
 brew install stern
 

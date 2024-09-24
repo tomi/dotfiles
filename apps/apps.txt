@@ -15,3 +15,6 @@ https://docs.docker.com/desktop/install/mac-install/
 
 BetterSnapTool
 https://apps.apple.com/us/app/bettersnaptool/id417375580?mt=12
+
+FiraCode
+https://www.nerdfonts.com/font-downloads
