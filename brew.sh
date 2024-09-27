@@ -25,6 +25,7 @@ brew install starship
 brew install stats
 brew install tfenv
 brew install tldr
+brew install watch
 brew install zsh
 
 # Kubetools
